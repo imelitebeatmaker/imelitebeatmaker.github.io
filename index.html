@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta charset='UTF-8'>
+<head>
+<title>Imelite Beatmaker</title>
+<link rel="icon" type="image/x-icon" href="jnjs.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class='fixtheposition'>
+<div class='topnav' id='myTopnav'>
+	<a href='index.html' class='active'><img src='home.png' class='navbar_logo'></a>
+	<a class='navbarText' href='https://gofund.me/1083bbef'>Donate <img src='donate.jpg' class='navbar_icons'></a>
+	<div class='dropdown'>
+		<button class='dropbtn navbarText'>Social Media <img src='website.png' class='navbar_icons'>
+		<i class='fa fa-caret-down'></i>
+		</button>
+		<div class='dropdown-content'>
+				<a href='https://www.youtube.com/channel/UCuA0-Z_8aOIdrDLCP3YSZuQ' class='navbarText'>YouTube<img src='youtube.png' class='navbar_icons'></a>
+				<a href='https://soundcloud.com/imelitebeats' class='navbarText'>Soundcloud<img src='soundcloud.jpg' class='navbar_icons'></a>
+		</div>
+	</div>
+	<a class='navbarText' href='contact.html'>Contact <img src='contact.png' height='30' width='30' class='navbaricons'></a>
+	<a class='navbarText' href="policy.html">Privacy<img src="lock.png" height="30" width="30" class="navbaricons"></a>
+	<a href='javascript:void(0);' style='font-size: 25px;' class='icon' onclick='myFunction()'>&#9776;</a>
+</div>
+</div>
+<video type="video/mp4" class="videobackground" autoPlay muted loop preLoad playsinline>
+    <source src="background.mp4">
+</video>
+	<!-- Define the section for displaying details -->
+	<div class="details">
+	<div class="now-playing">PLAYING x OF y</div>
+	<div class="track-art"></div>
+	<div class="track-name">Track Name</div>
+	<div class="track-artist">Track Artist</div>
+	</div>
+	<div class='centerPlayPauseNext'>
+	<!-- Define the section for displaying track buttons -->
+	<img src="previous.png" onclick="prevTrack()" width="30px">
+	<img src="playpause.png" onclick="playpauseTrack()" width="50px">
+	<img src="next.png" onclick="nextTrack()" width="30px">
+	</div>
+	<!-- Define the section for displaying the seek slider-->
+	<div class="slider_container">
+	<div class="current-time">00:00</div>
+	<input type="range" min="1" max="100"
+		value="0" class="seek_slider" onchange="seekTo()">
+	<div class="total-duration">00:00</div>
+	</div>
+
+	<!-- Define the section for displaying the volume slider-->
+	<div class="slider_container">
+	<img src="voldown.png" class="img1">
+	<input type="range" min="1" max="100"
+		value="99" class="volume_slider" onchange="setVolume()">
+	<img src="volup.png">
+	</div>
+	</div>
+<!-- Load the main script for the player -->
+<script src="main.js"></script>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 1</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 1 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 2</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 2 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 3</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 3 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 4</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 4 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 5</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 5 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 6</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 6 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 7</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 7 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 8</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 8 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 9</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 9 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 10</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 10 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 11</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 11 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 12</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 12 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 13</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 13 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 14</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 14 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 15</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 15 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 16</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 16 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 17</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 17 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 18</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 18 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 19</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 19 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 20</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 20 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 21</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 21 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 22</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 22 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 23</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 23 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 24</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 24 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 25</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 25 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 26</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 26 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 27</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 27 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 28</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 28 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 29</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 29 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 30</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 30 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 31</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 31 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 32</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 32 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 33</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 33 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 34</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 34 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 35</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 35 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 36</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 36 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 37</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 37 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 38</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 38 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 39</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 39 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 40</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 40 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 41</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 41 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 42</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 42 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 43</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 43 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 44</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 44 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 45</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 45 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 46</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 46 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 47</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 47 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 48</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 48 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+<div class="content">
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 49</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 49 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+<div class="card">
+	<h1>Hip Hop Rap Beat Instrumental 50</h1>
+	<p class="price">€10.00</p>
+	<p>Hip Hop Rap Beat Instrumental 50 license for comercial use.</p>
+	<form action="https://buy.stripe.com/test_cN29BUbxi264cak288">
+		<input type="submit" value="Buy" />
+	</form>
+</div>
+</div>
+</body>
+</html>
