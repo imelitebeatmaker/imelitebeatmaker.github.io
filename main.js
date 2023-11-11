@@ -441,3 +441,11 @@ if (!isNaN(curr_track.duration)) {
 }
 // Load the first track in the tracklist
 loadTrack(track_index);
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+	}
